@@ -1,0 +1,85 @@
+INSERT INTO department VALUES(1, "Orthopedic Department", "5th Floor", "Orthopedic Facilities");
+INSERT INTO department VALUES(2, "Pathology Department", "2nd Floor", "Pathology Facilities");
+INSERT INTO department VALUES(3, "Dental Department", "3rd Floor", "Dental Facilities");
+INSERT INTO department VALUES(4, "Gynecology Department", "1st Floor", "Gynecology Facilities");
+INSERT INTO department VALUES(5, "Neurology Department", "4th Floor", "Neurology Facilities");
+INSERT INTO department VALUES(6, "Cardiology Department", "4th Floor", "Cardiology Facilities");
+INSERT INTO department VALUES(7, "Cancer Department", "1st Floor", "Cancer Facilities");
+INSERT INTO department VALUES(8, "Corpse Department", "2nd Floor", "Corpse Facilities");
+INSERT INTO department VALUES(9, "Anesthesiology Department", "3rd Floor", "Anesthesiology Facilities");
+INSERT INTO department VALUES(10, "Blood Bank Department", "5th Floor", "Blood Bank Facilities");
+
+INSERT INTO all_doctors VALUES("DR1", 5);
+INSERT INTO all_doctors VALUES("DR2", 4);
+INSERT INTO all_doctors VALUES("DR3", 3);
+INSERT INTO all_doctors VALUES("DR4", 2);
+INSERT INTO all_doctors VALUES("DR5", 1);
+INSERT INTO all_doctors VALUES("DC1", 6);
+INSERT INTO all_doctors VALUES("DC2", 7);
+INSERT INTO all_doctors VALUES("DC3", 8);
+INSERT INTO all_doctors VALUES("DC4", 9);
+INSERT INTO all_doctors VALUES("DC5", 10);
+
+
+
+INSERT INTO admin_server VALUES("DR1", "DR1");
+INSERT INTO admin_server VALUES("DR2", "DR2");
+INSERT INTO admin_server VALUES("DR3", "DR3");
+INSERT INTO admin_server VALUES("DR4", "DR4");
+INSERT INTO admin_server VALUES("DR5", "DR5");
+INSERT INTO admin_server VALUES("DC1", "DC1");
+INSERT INTO admin_server VALUES("DC2", "DC2");
+INSERT INTO admin_server VALUES("DC3", "DC3");
+INSERT INTO admin_server VALUES("DC4", "DC4");
+INSERT INTO admin_server VALUES("DC5", "DC5");
+
+
+
+INSERT INTO doc_reg VALUES(
+    'DC1', 
+    'CYD', 
+    'JUARIO', 
+    'Cardilogist', 
+    'Sa Jupiter', 
+    123456, 
+    78340, 
+    CURRENT_DATE);
+
+INSERT INTO doc_on_call VALUES(
+    'DC1', 
+    'CYD', 
+    'JUARIO', 
+    'Cardiologist',  
+    12345678, 
+    'Duol sa Jupiter',
+    2500,
+    CURRENT_DATE);
+
+
+
+INSERT INTO pat_admit VALUES(
+   'PT2',
+    15000,
+    'Credit',
+    401,
+    5,
+    CURRENT_DATE,
+    'Headache',
+    'Tumor',
+    'Tumor Surgery',
+    'DR1',
+    'Nurse Wang');
+
+
+
+
+
+
+
+
+
+
+
+
+
+

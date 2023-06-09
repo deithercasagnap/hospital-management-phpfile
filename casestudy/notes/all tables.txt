@@ -1,0 +1,97 @@
+
+CREATE TABLE department(department_code INT, department_name VARCHAR(50), department_location VARCHAR(50), facilities VARCHAR(50), PRIMARY KEY(department_code));
+
+
+
+
+CREATE TABLE all_doctors(
+    doctor_number VARCHAR(50), 
+    department_code INT, 
+    PRIMARY KEY(doctor_number));
+
+
+CREATE TABLE doc_reg(
+    doctor_number VARCHAR(50), 
+    first_name VARCHAR(50), 
+    last_name VARCHAR(50), 
+    qualification VARCHAR(50), 
+    address VARCHAR(50), 
+    phone_number INT, 
+    salary FLOAT(9,2), 
+    date_hired DATE);
+
+
+CREATE TABLE doc_on_call(
+    doctor_number VARCHAR(50), 
+    first_name VARCHAR(50), 
+    last_name VARCHAR(50), 
+    qualification VARCHAR(50),  
+    phone_number INT, 
+    address VARCHAR(50),
+    fees_per_call FLOAT(9,2),
+    payment_due DATE);
+
+
+CREATE TABLE admin_server(doctor_number VARCHAR(50), emp_password VARCHAR(200));
+
+CREATE TABLE pat_admit(
+    patient_number VARCHAR(50),
+    advance_payment FLOAT(9,2),
+    mode_of_payment VARCHAR(50),
+    room_number INT,
+    department VARCHAR(50),
+    date_of_admission DATE,
+    initial_condition VARCHAR(200),
+    diagnosis VARCHAR(200),
+    treatment VARCHAR(200),
+    doctor_number VARCHAR(50),
+    attendant_name VARCHAR(200));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
